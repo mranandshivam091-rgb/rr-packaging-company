@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "rr-packaging",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["gatsby", "develop", "-p", "8000"],
+      "port": 8000
+    }
+  ]
+}

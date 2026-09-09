@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+
+# gatsby build output
+.cache/
+public/
+
+# env
+.env
+.env.*
+!.env.example
+
+# os / editor
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+# vercel
+.vercel/
