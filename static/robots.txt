@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.rrpackagingcompany.com/sitemap-index.xml
+Sitemap: https://rr-packaging-company.vercel.app/sitemap-index.xml

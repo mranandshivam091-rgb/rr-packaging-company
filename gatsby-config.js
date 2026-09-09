@@ -1,7 +1,7 @@
 /**
  * RR Packaging Company — gatsby-config
  */
-const siteUrl = process.env.SITE_URL || "https://www.rrpackagingcompany.com"
+const siteUrl = process.env.SITE_URL || "https://rr-packaging-company.vercel.app"
 
 module.exports = {
   siteMetadata: {
