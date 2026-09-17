@@ -143,18 +143,18 @@ function Reel({ position, scale = 1 }) {
       <mesh>
         <cylinderGeometry args={[1, 1, 1.5, 72, 1, true]} />
         <meshPhysicalMaterial
-          color="#2A2621" metalness={1} roughness={0.28}
+          color="#C7CBDB" metalness={1} roughness={0.3}
           side={THREE.DoubleSide} envMapIntensity={1.1}
         />
       </mesh>
       {/* spiral wound edges */}
       <mesh position={[0, 0.76, 0]} rotation={[-Math.PI / 2, 0, 0]}>
         <ringGeometry args={[0.34, 1.001, 72, 1]} />
-        <meshPhysicalMaterial color="#37322A" metalness={1} roughness={0.44} side={THREE.DoubleSide} />
+        <meshPhysicalMaterial color="#B7BDD4" metalness={1} roughness={0.46} side={THREE.DoubleSide} />
       </mesh>
       <mesh position={[0, -0.76, 0]} rotation={[-Math.PI / 2, 0, 0]}>
         <ringGeometry args={[0.34, 1.001, 72, 1]} />
-        <meshPhysicalMaterial color="#2C3439" metalness={1} roughness={0.42} side={THREE.DoubleSide} />
+        <meshPhysicalMaterial color="#AEB4CC" metalness={1} roughness={0.44} side={THREE.DoubleSide} />
       </mesh>
     </group>
   )
@@ -186,7 +186,7 @@ function Dust({ count = 380 }) {
         <bufferAttribute attach="attributes-position" args={[positions, 3]} />
       </bufferGeometry>
       <pointsMaterial
-        size={0.028} color="#D2B182" transparent opacity={0.5}
+        size={0.028} color="#F5941F" transparent opacity={0.35}
         sizeAttenuation depthWrite={false}
       />
     </points>
@@ -226,29 +226,29 @@ export default function HeroScene({ paused = false }) {
       gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
       style={{ pointerEvents: "none" }}
     >
-      <color attach="background" args={["#14120F"]} />
-      <fog attach="fog" args={["#14120F", 11, 26]} />
+      <color attach="background" args={["#FFFFFF"]} />
+      <fog attach="fog" args={["#FFFFFF", 13, 27]} />
 
-      <ambientLight intensity={0.34} />
-      <directionalLight position={[6, 5, 6]} intensity={1.05} color="#FFF0DC" />
-      <pointLight position={[7, -1, 3]} intensity={20} distance={22} color="#C4293B" />
-      <pointLight position={[-7, 3, 2]} intensity={15} distance={22} color="#B08D57" />
+      <ambientLight intensity={0.75} />
+      <directionalLight position={[6, 5, 6]} intensity={0.7} color="#FFFFFF" />
+      <pointLight position={[7, -1, 3]} intensity={18} distance={22} color="#F5941F" />
+      <pointLight position={[-7, 3, 2]} intensity={14} distance={22} color="#A48FCB" />
 
       <Rig>
         <Reel position={[-6.6, -1.9, -4.4]} scale={1.45} />
         <Reel position={[7.2, 2.4, -6.2]} scale={1.05} />
 
         <Ribbon
-          color="#DCD5C9" halfWidth={0.42} ampY={1.15} ampZ={2.1}
+          color="#AEB6D6" halfWidth={0.42} ampY={1.15} ampZ={2.1}
           twist={0.3} speed={0.36} seed={0} iridescence={0.75} roughness={0.14}
         />
         <Ribbon
-          color="#A81E2D" halfWidth={0.3} ampY={1.7} ampZ={1.5}
+          color="#F5941F" halfWidth={0.3} ampY={1.7} ampZ={1.5}
           freqY={0.33} freqZ={0.37} twist={0.42} speed={0.29} seed={2.1}
           offset={[0, -0.9, -1.6]} iridescence={0.25} roughness={0.24}
         />
         <Ribbon
-          color="#B08D57" halfWidth={0.2} ampY={2.1} ampZ={1.2}
+          color="#A48FCB" halfWidth={0.2} ampY={2.1} ampZ={1.2}
           freqY={0.5} freqZ={0.22} twist={0.55} speed={0.45} seed={4.4}
           offset={[0, 1.2, -2.8]} iridescence={0.2} roughness={0.3} opacity={0.92}
         />
@@ -258,13 +258,13 @@ export default function HeroScene({ paused = false }) {
 
       {/* Studio reflections, generated in-scene — no HDRI download. */}
       <Environment resolution={256} frames={1}>
-        <Lightformer form="rect" intensity={3.2} color="#FFF6E9"
+        <Lightformer form="rect" intensity={1.6} color="#FFFFFF"
           position={[0, 5, -7]} scale={[14, 7, 1]} />
-        <Lightformer form="rect" intensity={6} color="#D8394C"
+        <Lightformer form="rect" intensity={3} color="#F5941F"
           position={[7, 0, 3]} scale={[9, 9, 1]} rotation-y={-Math.PI / 2.6} />
-        <Lightformer form="rect" intensity={4} color="#E0BC8A"
+        <Lightformer form="rect" intensity={2.6} color="#A48FCB"
           position={[-8, 2, 2]} scale={[9, 9, 1]} rotation-y={Math.PI / 2.6} />
-        <Lightformer form="ring" intensity={2} color="#A9BEDC"
+        <Lightformer form="ring" intensity={1.4} color="#4E9AE8"
           position={[0, -6, 2]} scale={9} />
       </Environment>
     </Canvas>

@@ -32,8 +32,8 @@ export default function IndexPage() {
 
           <Words
             className="t-mega"
-            text="Your brand, printed by the kilometre."
-            highlight={[5]}
+            text="Packaging that makes your brand stand out."
+            highlight={[5, 6]}
             delay={0.3}
           />
 
@@ -146,7 +146,7 @@ export default function IndexPage() {
                 <Link
                   to={`/products/#${p.slug}`}
                   className="card"
-                  style={{ display: "block", height: "100%", background: "#0E1013" }}
+                  style={{ display: "block", height: "100%" }}
                 >
                   <div className="card-media">
                     <Img name={p.image} alt={p.name} />
@@ -298,7 +298,7 @@ export default function IndexPage() {
             {whyUs.map(w => (
               <StaggerItem key={w.title}>
                 <div style={{ borderTop: "1px solid var(--paper-line)", paddingTop: 26, height: "100%" }}>
-                  <span style={{ color: "var(--red)" }}><Check size={20} /></span>
+                  <span style={{ color: "var(--red-deep)" }}><Check size={20} /></span>
                   <h3 className="t-h4" style={{ marginTop: 16 }}>{w.title}</h3>
                   <p className="t-small" style={{ marginTop: 12 }}>{w.body}</p>
                 </div>

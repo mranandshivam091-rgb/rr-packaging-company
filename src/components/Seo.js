@@ -75,7 +75,7 @@ export default function Seo({ title, description, pathname = "/", noindex, child
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.image} />
 
-      <meta name="theme-color" content="#0A0B0C" />
+      <meta name="theme-color" content="#4E9AE8" />
       <meta name="geo.region" content="IN-UP" />
       <meta name="geo.placename" content={addressOneLine} />
 

@@ -103,7 +103,7 @@ export default function ProductsPage() {
             <p className="eyebrow" style={{ marginTop: "clamp(40px,6vw,72px)" }}>Finishes &amp; features</p>
             <div className="ind-proof" style={{ marginTop: 18 }}>
               {finishes.map(f => (
-                <span className="tag" key={f} style={{ borderColor: "var(--paper-line)", background: "rgba(10,11,12,0.04)", color: "var(--txt-ink-dim)" }}>
+                <span className="tag" key={f} style={{ borderColor: "var(--paper-line)", background: "rgba(27,42,109,0.05)", color: "var(--txt-ink-dim)" }}>
                   {f}
                 </span>
               ))}

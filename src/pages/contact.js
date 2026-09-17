@@ -211,7 +211,7 @@ export default function ContactPage() {
               </label>
 
               {touched && !valid && (
-                <p className="t-small" style={{ color: "var(--red-hi)", marginBottom: 16 }}>
+                <p className="t-small" style={{ color: "var(--red-deep)", marginBottom: 16 }}>
                   Please add your name and a phone number so we can reply.
                 </p>
               )}
