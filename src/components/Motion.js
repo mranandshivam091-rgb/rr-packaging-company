@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react"
 import {
-  animate, motion, useInView, useMotionValueEvent, useScroll,
+  AnimatePresence, animate, motion, useInView, useMotionValueEvent, useScroll,
   useSpring, useTransform, useVelocity,
 } from "framer-motion"
 
@@ -113,6 +113,52 @@ export function DrawRule({ className, color = "currentColor", delay = 0 }) {
         transition={{ duration: 1.15, delay, ease: EASE }}
       />
     </svg>
+  )
+}
+
+/* ── optimistic hand-off to WhatsApp/phone/email/maps ─────────────
+   None of those give the page any signal back, so rather than leave
+   the control looking inert while the OS switches app/tab, assume the
+   hand-off works and show the confirmation immediately, reverting a
+   couple of seconds later. */
+export function OptimisticAction({
+  as: Tag = "a",
+  icon,
+  sentIcon,
+  label,
+  sentLabel,
+  duration = 2200,
+  className,
+  onActivate,
+  ...rest
+}) {
+  const [sent, setSent] = useState(false)
+  const timer = useRef()
+  useEffect(() => () => clearTimeout(timer.current), [])
+
+  const handleClick = e => {
+    const ok = onActivate ? onActivate(e) : true
+    if (ok === false) return
+    setSent(true)
+    clearTimeout(timer.current)
+    timer.current = setTimeout(() => setSent(false), duration)
+  }
+
+  return (
+    <Tag className={className} onClick={handleClick} disabled={Tag === "button" ? sent : undefined} {...rest}>
+      <AnimatePresence mode="wait" initial={false}>
+        <motion.span
+          key={sent ? "sent" : "idle"}
+          style={{ display: "inline-flex", alignItems: "center", gap: "0.65em" }}
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -6 }}
+          transition={{ duration: 0.25, ease: EASE }}
+        >
+          {sent ? sentIcon : icon} {sent ? sentLabel : label}
+        </motion.span>
+      </AnimatePresence>
+    </Tag>
   )
 }
 

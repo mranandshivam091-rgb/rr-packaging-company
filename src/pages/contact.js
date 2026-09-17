@@ -1,11 +1,14 @@
-import React, { useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
+import { AnimatePresence, motion } from "framer-motion"
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import Accordion from "../components/Accordion"
 import { Reveal, Words } from "../components/Reveal"
 import { ScrollWords } from "../components/Motion"
-import { Arrow, Clock, Mail, Phone, Pin, Whatsapp } from "../components/Icons"
+import { Arrow, Check, Clock, Mail, Phone, Pin, Whatsapp } from "../components/Icons"
 import { company, addressOneLine, products, faqs } from "../data/site"
+
+const EASE = [0.22, 1, 0.36, 1]
 
 const blank = {
   name: "", org: "", phone: "", email: "",
@@ -37,6 +40,20 @@ function compose(f) {
 export default function ContactPage() {
   const [f, setF] = useState(blank)
   const [touched, setTouched] = useState(false)
+  /* Optimistic send state — neither wa.me nor mailto: gives any signal back
+     to the page, so rather than leave the button inert while the browser
+     switches context, we assume the hand-off succeeds and show the
+     confirmation immediately, reverting a couple of seconds later. */
+  const [sent, setSent] = useState(null) // null | "whatsapp" | "email"
+  const resetTimer = useRef()
+
+  useEffect(() => () => clearTimeout(resetTimer.current), [])
+
+  const flashSent = channel => {
+    setSent(channel)
+    clearTimeout(resetTimer.current)
+    resetTimer.current = setTimeout(() => setSent(null), 2600)
+  }
 
   const set = k => e => setF({ ...f, [k]: e.target.value })
   const valid = f.name.trim() && f.phone.trim().length >= 8
@@ -45,6 +62,7 @@ export default function ContactPage() {
     e.preventDefault()
     setTouched(true)
     if (!valid) return
+    flashSent("whatsapp")
     window.open(
       `https://wa.me/${company.whatsapp}?text=${encodeURIComponent(compose(f))}`,
       "_blank",
@@ -55,6 +73,7 @@ export default function ContactPage() {
   const sendEmail = () => {
     setTouched(true)
     if (!valid) return
+    flashSent("email")
     const subject = `Packaging enquiry — ${f.org || f.name}`
     window.location.href =
       `mailto:${company.email}?subject=${encodeURIComponent(subject)}` +
@@ -217,11 +236,59 @@ export default function ContactPage() {
               )}
 
               <div style={{ display: "flex", flexWrap: "wrap", gap: 12, marginTop: 8 }}>
-                <button type="submit" className="btn">
-                  <Whatsapp size={16} /> Send on WhatsApp
+                <button type="submit" className="btn" disabled={sent === "whatsapp"}>
+                  <AnimatePresence mode="wait" initial={false}>
+                    {sent === "whatsapp" ? (
+                      <motion.span
+                        key="sent"
+                        style={{ display: "inline-flex", alignItems: "center", gap: "0.65em" }}
+                        initial={{ opacity: 0, y: 6 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -6 }}
+                        transition={{ duration: 0.25, ease: EASE }}
+                      >
+                        <Check size={16} /> Opening WhatsApp…
+                      </motion.span>
+                    ) : (
+                      <motion.span
+                        key="idle"
+                        style={{ display: "inline-flex", alignItems: "center", gap: "0.65em" }}
+                        initial={{ opacity: 0, y: 6 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -6 }}
+                        transition={{ duration: 0.25, ease: EASE }}
+                      >
+                        <Whatsapp size={16} /> Send on WhatsApp
+                      </motion.span>
+                    )}
+                  </AnimatePresence>
                 </button>
-                <button type="button" className="btn -ghost" onClick={sendEmail}>
-                  <Mail size={16} /> Send by email
+                <button type="button" className="btn -ghost" onClick={sendEmail} disabled={sent === "email"}>
+                  <AnimatePresence mode="wait" initial={false}>
+                    {sent === "email" ? (
+                      <motion.span
+                        key="sent"
+                        style={{ display: "inline-flex", alignItems: "center", gap: "0.65em" }}
+                        initial={{ opacity: 0, y: 6 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -6 }}
+                        transition={{ duration: 0.25, ease: EASE }}
+                      >
+                        <Check size={16} /> Opening your email app…
+                      </motion.span>
+                    ) : (
+                      <motion.span
+                        key="idle"
+                        style={{ display: "inline-flex", alignItems: "center", gap: "0.65em" }}
+                        initial={{ opacity: 0, y: 6 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -6 }}
+                        transition={{ duration: 0.25, ease: EASE }}
+                      >
+                        <Mail size={16} /> Send by email
+                      </motion.span>
+                    )}
+                  </AnimatePresence>
                 </button>
               </div>
 

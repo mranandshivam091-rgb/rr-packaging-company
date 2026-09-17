@@ -19,3 +19,4 @@ public/
 # vercel
 .vercel/
 .vercel
+.env*

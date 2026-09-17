@@ -3,8 +3,8 @@ import { motion } from "framer-motion"
 import Header from "./Header"
 import Footer from "./Footer"
 import { company } from "../data/site"
-import { Whatsapp } from "./Icons"
-import { ScrollProgress } from "./Motion"
+import { Check, Whatsapp } from "./Icons"
+import { OptimisticAction, ScrollProgress } from "./Motion"
 
 export default function Layout({ children }) {
   return (
@@ -22,7 +22,8 @@ export default function Layout({ children }) {
         {children}
       </motion.main>
       <Footer />
-      <a
+      <OptimisticAction
+        as="a"
         className="wa-fab"
         href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
           "Hello RR Packaging Company, I would like to enquire about packaging."
@@ -30,9 +31,9 @@ export default function Layout({ children }) {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with us on WhatsApp"
-      >
-        <Whatsapp />
-      </a>
+        icon={<Whatsapp />}
+        sentIcon={<Check size={22} />}
+      />
     </>
   )
 }

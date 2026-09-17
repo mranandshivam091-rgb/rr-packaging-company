@@ -278,6 +278,9 @@ h3, h4, h5 {
 .btn:hover { transform: translateY(-2px); background: var(--red-hi); }
 .btn:hover::after { transform: translateX(120%); }
 .btn:active { transform: translateY(0); background: var(--red-deep); }
+.btn:disabled { cursor: default; transform: none; opacity: 0.85; }
+.btn:disabled:hover { transform: none; background: var(--bg); }
+.btn:disabled::after { display: none; }
 
 .btn.-ghost {
   --bg: transparent;
