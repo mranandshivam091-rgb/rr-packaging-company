@@ -352,19 +352,22 @@ h3, h4, h5 {
 .brand-name {
   display: block;
   font-family: var(--f-sans);
-  font-size: 1.15rem;
+  font-size: 24px;
   font-weight: 700;
+  line-height: 1.1;
   letter-spacing: -0.012em;
   color: var(--txt);
 }
 .brand-sub {
   display: block;
-  font-size: 1.15rem;
+  font-size: 20px;
   font-weight: 600;
-  letter-spacing: 0.2em;
+  line-height: 1.1;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--txt);
   opacity: 0.82;
+  margin-top: 2px;
 }
 
 .nav { display: none; align-items: center; gap: 2px; }
