@@ -21,7 +21,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="t-small max-52" style={{ marginTop: 18 }}>
-              {company.blurb} Manufacturing and trading from the UPSIDC industrial
+              {company.blurb} Manufacturing from the UPSIDC industrial
               area in Hapur, Uttar Pradesh, and delivering across India.
             </p>
             <p className="t-small" style={{ marginTop: 20, color: "var(--brass-hi)" }}>

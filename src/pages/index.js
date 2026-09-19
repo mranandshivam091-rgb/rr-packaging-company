@@ -39,7 +39,7 @@ export default function IndexPage() {
 
           <Reveal delay={0.9} y={18}>
             <p className="t-lead hero-lead">
-              {company.name} manufactures and trades every kind of packaging
+              {company.name} manufactures every kind of packaging
               printing material — rotogravure-printed laminated rolls, pouches,
               sachets and shrink sleeves — for food, pharma and FMCG brands
               across India.
@@ -54,7 +54,7 @@ export default function IndexPage() {
           <Reveal delay={1.2} y={14} className="hero-foot">
             {company.motto.map(m => <span key={m}>{m}</span>)}
             <span>Custom printing</span>
-            <span>Manufacturer &amp; trader</span>
+            <span>Manufacturer</span>
           </Reveal>
         </div>
         <div className="scroll-cue" aria-hidden="true">Scroll <i /></div>
@@ -99,7 +99,7 @@ export default function IndexPage() {
                 {[
                   ["Printing", "Rotogravure, up to 8 colours"],
                   ["Conversion", "Lamination, slitting, pouching"],
-                  ["Also", "Trading of all packaging printing materials"],
+                  ["Also", "Supply of all packaging printing materials"],
                   ["Led by", `${company.proprietor.name}, ${company.proprietor.role}`],
                 ].map(([k, v]) => (
                   <li key={k}><span className="k">{k}</span><span className="v">{v}</span></li>
@@ -316,7 +316,7 @@ export default function IndexPage() {
 export const Head = () => (
   <Seo
     title="Flexible Packaging & Printing in Hapur"
-    description="R R Packaging Company — manufacturer and trader of all packaging printing materials. Rotogravure-printed laminated rolls, pouches, sachets and shrink sleeves for food, pharma and FMCG brands. Pan-India delivery from Hapur, U.P."
+    description="R R Packaging Company — manufacturer of all packaging printing materials. Rotogravure-printed laminated rolls, pouches, sachets and shrink sleeves for food, pharma and FMCG brands. Pan-India delivery from Hapur, U.P."
     pathname="/"
   />
 )

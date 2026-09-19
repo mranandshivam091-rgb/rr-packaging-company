@@ -31,7 +31,7 @@ export default function AboutPage() {
         <Words className="t-h1" text="Printing packaging out of Hapur, for the whole country." highlight={[4]} delay={0.15} />
         <Reveal delay={0.5}>
           <p className="t-lead">
-            {company.name} is a manufacturing and trading house for packaging
+            {company.name} is a manufacturing house for packaging
             printing materials, working out of the UPSIDC industrial area on MG
             Road, Hapur. We print, laminate, slit and convert flexible packaging —
             and we source everything else our customers need, so one purchase
@@ -134,7 +134,7 @@ export default function AboutPage() {
             </div>
             <Reveal delay={0.12}>
               <p className="t-lead">
-                Pre-press to dispatch, with the trading arm covering anything we do
+                Pre-press to dispatch, with sourcing support covering anything we do
                 not run in-house.
               </p>
             </Reveal>
@@ -179,7 +179,7 @@ export default function AboutPage() {
 export const Head = () => (
   <Seo
     title="About"
-    description="R R Packaging Company is a flexible packaging manufacturer and trader in the UPSIDC industrial area, Hapur, Uttar Pradesh, led by Ramakant Pandey. Rotogravure printing, lamination, slitting and pouching under one roof."
+    description="R R Packaging Company is a flexible packaging manufacturer in the UPSIDC industrial area, Hapur, Uttar Pradesh, led by Ramakant Pandey. Rotogravure printing, lamination, slitting and pouching under one roof."
     pathname="/about/"
   />
 )

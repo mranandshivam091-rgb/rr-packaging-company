@@ -15,13 +15,13 @@ export const company = {
   tagline: "We deal in all types of packaging solutions",
   motto: ["Quality", "Durability", "Innovation"],
   blurb:
-    "Manufacturing & trading of all packaging printing materials — rotogravure-printed laminated rolls, pouches, sachets and shrink sleeves.",
+    "Manufacturing of all packaging printing materials — rotogravure-printed laminated rolls, pouches, sachets and shrink sleeves.",
   proprietor: {
     name: "Ramakant Pandey",
     role: "Founder & Proprietor",
   },
   phones: [
-    { label: "Works", number: "+919711853825", display: "+91 97118 53825" },
+    { label: "Works & Sales", number: "+919711853825", display: "+91 97118 53825" },
   ],
   whatsapp: "918434635708",
   social: {
@@ -176,14 +176,14 @@ export const products = [
   {
     slug: "custom-printing",
     image: "prod-supplies",
-    name: "Custom Printing & Trading",
+    name: "Custom Printing & Supplies",
     kicker: "Whatever the job needs",
     summary:
-      "Beyond our own formats we trade the full range of packaging printing materials — so one purchase order covers everything.",
+      "Beyond our own formats we supply the full range of packaging printing materials — so one purchase order covers everything.",
     detail:
-      "If you need a material or a format we do not run in-house, we source it. Adhesive tapes, courier bags, BOPP bags, laminates, printed labels — R R Packaging Company has been a manufacturing and trading house from day one.",
+      "If you need a material or a format we do not run in-house, we source it. Adhesive tapes, courier bags, BOPP bags, laminates, printed labels — R R Packaging Company has been a manufacturing house from day one.",
     specs: [
-      ["Trading", "All packaging printing materials"],
+      ["Supply", "All packaging printing materials"],
       ["Sourcing", "Vetted mills and converters"],
       ["Logistics", "Consolidated dispatch"],
       ["Terms", "On request"],
@@ -259,7 +259,6 @@ export const work = [
   { image: "unocid-sachet", brand: "UNOCID", format: "Sachet chain", note: "Patil Dabur Ayurved — antacid, 5 g pouches" },
   { image: "rm-health-mix", brand: "RM Ayurved Health Mix", format: "Stand-up zipper pouch", note: "300 g ayurvedic powder, front panel" },
   { image: "rm-health-back", brand: "RM Ayurved Health Mix", format: "Stand-up zipper pouch", note: "Reverse panel — dosage and licence copy" },
-  { image: "beverage-label", brand: "Bottled beverage", format: "Wrap-around bottle label", note: "1.25 L PET — high-speed label stock" },
   { image: "aowsome-turmeric", brand: "Aowsome Indian", format: "Printed laminated roll", note: "Muskan Food Industries — turmeric powder" },
   { image: "bartan-bar-rolls", brand: "AVR & Surya Kiran Spices", format: "Printed laminated rolls", note: "Spices & masala — garam masala, kali mirch, dhaniya and haldi packaging rolls", fit: "contain" },
 ]
@@ -285,16 +284,16 @@ export const process = [
   { n: "01", title: "Artwork & pre-press", body: "We take your design, colour-separate it, add registration and eye-marks, and send you a digital proof before a single cylinder is cut." },
   { n: "02", title: "Rotogravure printing", body: "Copper cylinders are engraved to the separation, chrome-plated for run length, and proofed against your approved colour targets." },
   { n: "03", title: "Rotogravure printing", body: "Up to eight colours in a single pass, with in-line registration control and continuous density checks against the approved proof." },
-  { n: "04", title: "Solvent-less lamination & curing", body: "Layers are bonded on solvent-less lamination lines to the structure your product needs — moisture, oxygen, aroma or light barrier — then cured to full bond strength." },
+  { n: "04", title: "Solvent-less lamination", body: "Layers are bonded on solvent-less lamination lines to the structure your product needs — moisture, oxygen, aroma or light barrier — then cured to full bond strength." },
   { n: "05", title: "Slitting & pouching", body: "Slit to your web width and core, or converted into finished pouches and sachets on our pouching lines." },
   { n: "06", title: "QC & dispatch", body: "Every reel is checked for print, bond and seal before it is packed, labelled and dispatched anywhere in India." },
 ]
 
 export const whyUs = [
-  { title: "Manufacturer and trader", body: "We print and convert in-house, and we trade everything else. One supplier, one purchase order, one point of accountability." },
+  { title: "Manufacturer of every type of pouch", body: "We print and convert every pouch format in-house — one supplier, one purchase order, one point of accountability." },
   { title: "Built around your machine", body: "Web width, core size, wind direction, eye-mark position — we set the reel up for your line, not ours, so it runs from the first metre." },
   { title: "Colour you can hold to", body: "Approved proof first, then density checks through the run. The tenth reel matches the first." },
-  { title: "Pan-India dispatch", body: "From the UPSIDC industrial area in Hapur, with easy road access to Delhi NCR and the whole country." },
+  { title: "Pan-India dispatch", body: "From the UPSIDC industrial area in Hapur, with easy transport access to Delhi NCR and the whole country." },
 ]
 
 export const faqs = [
@@ -303,5 +302,5 @@ export const faqs = [
   { q: "Can you match my existing pack?", a: "Yes. Send us a physical sample of the current pack. We will identify the structure and match the print, and tell you honestly if there is a better or cheaper structure for the same job." },
   { q: "Which structures do you supply?", a: "PET/PE, BOPP/PE, PET/MET-PET/PE and PET/AL/PE as standard, plus paper and speciality laminates on request. We recommend the structure from your product, shelf life and filling line." },
   { q: "How long does a first order take?", a: "Artwork and proofing is the part that varies. Once the proof is approved and cylinders are ready, printing, lamination and slitting run to a scheduled date that we commit to in writing." },
-  { q: "Do you deliver outside Uttar Pradesh?", a: "Yes — we dispatch across India by road from Hapur. Freight is quoted with the order." },
+  { q: "Do you deliver outside Uttar Pradesh?", a: "Yes — we dispatch across India by transport from Hapur. Freight is quoted with the order." },
 ]

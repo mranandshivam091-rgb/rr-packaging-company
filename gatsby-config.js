@@ -8,7 +8,7 @@ module.exports = {
     title: "R R Packaging Company",
     titleTemplate: "%s | R R Packaging Company",
     description:
-      "Manufacturer and trader of all packaging printing materials. Rotogravure-printed laminated rolls, pouches, sachets and shrink sleeves for food, pharma and FMCG brands. Pan-India delivery from Hapur, Uttar Pradesh.",
+      "Manufacturer of all packaging printing materials. Rotogravure-printed laminated rolls, pouches, sachets and shrink sleeves for food, pharma and FMCG brands. Pan-India delivery from Hapur, Uttar Pradesh.",
     siteUrl,
     image: "/og-image.jpg",
     locale: "en_IN",

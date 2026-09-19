@@ -29,7 +29,7 @@ export default function ProductsPage() {
         <Words className="t-h1" text="Every format a flexible pack can take." highlight={[1]} delay={0.15} />
         <Reveal delay={0.5}>
           <p className="t-lead">
-            We print and convert eight formats in-house, and trade the rest. Each
+            We print and convert eight formats in-house, and supply the rest. Each
             one below lists the structures, sizes and options we run — bring us
             your product and we will tell you which fits.
           </p>
