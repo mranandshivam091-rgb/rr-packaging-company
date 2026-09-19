@@ -115,25 +115,15 @@ export default function ContactPage() {
               </div>
             ))}
 
-            {company.partner.show && (
-              <div className="contact-row">
-                <span className="contact-ic"><Phone /></span>
-                <div>
-                  <p className="t-small" style={{ textTransform: "uppercase", letterSpacing: "0.12em" }}>
-                    {company.partner.region} — {company.partner.name}
-                  </p>
-                  {company.partner.phones.map(p => (
-                    <a
-                      key={p.number}
-                      href={`tel:${p.number}`}
-                      style={{ display: "block", fontSize: "1.15rem", fontFamily: "var(--f-display)" }}
-                    >
-                      {p.display} <span className="t-small">· {p.label}</span>
-                    </a>
-                  ))}
-                </div>
+            <div className="contact-row">
+              <span className="contact-ic"><Phone /></span>
+              <div>
+                <p className="t-small" style={{ textTransform: "uppercase", letterSpacing: "0.12em" }}>Bihar &amp; Jharkhand — Sales</p>
+                <a href="tel:+918434635708" style={{ fontSize: "1.15rem", fontFamily: "var(--f-display)" }}>
+                  +91 84346 35708
+                </a>
               </div>
-            )}
+            </div>
 
             <div className="contact-row">
               <span className="contact-ic"><Whatsapp size={18} /></span>

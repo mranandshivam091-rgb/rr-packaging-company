@@ -55,10 +55,7 @@ export default function AboutPage() {
             </Reveal>
             <Reveal delay={0.12}>
               <p className="t-lead mt-m">
-                RR Packaging Company is led by {company.proprietor.name}
-                {company.partner.show && (
-                  <>, with {company.partner.name} heading {company.partner.region}</>
-                )}. The
+                RR Packaging Company is led by {company.proprietor.name}. The
                 business began the way most good converting businesses do — by
                 understanding what buyers actually struggle with. Not the price on
                 the quotation, but the reel that will not track on the machine, the
@@ -79,9 +76,6 @@ export default function AboutPage() {
                 {[
                   ["Business", "Manufacturing & trading of all packaging printing materials"],
                   ["Founder", `${company.proprietor.name} — ${company.proprietor.role}`],
-                  ...(company.partner.show
-                    ? [["Regional office", `${company.partner.name} — ${company.partner.role}, ${company.partner.region}`]]
-                    : []),
                   ["Plant", addressOneLine],
                   ["Reach", "Pan-India dispatch by road"],
                   ["Hours", company.hours],
@@ -185,7 +179,7 @@ export default function AboutPage() {
 export const Head = () => (
   <Seo
     title="About"
-    description="RR Packaging Company is a flexible packaging manufacturer and trader in the UPSIDC industrial area, Hapur, Uttar Pradesh, led by Avinash Kumar. Rotogravure printing, lamination, slitting and pouching under one roof."
+    description="RR Packaging Company is a flexible packaging manufacturer and trader in the UPSIDC industrial area, Hapur, Uttar Pradesh, led by Ramakant Pandey. Rotogravure printing, lamination, slitting and pouching under one roof."
     pathname="/about/"
   />
 )

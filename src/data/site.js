@@ -4,7 +4,7 @@
  *  Everything the website says lives in this one file.
  *  Edit here, rebuild, and the whole site updates.
  *
- *  Lines marked  // ⚠️ CONFIRM  should be checked with Avinash ji
+ *  Lines marked  // ⚠️ CONFIRM  should be checked with Ramakant ji
  *  before the site goes live.
  * ─────────────────────────────────────────────────────────────
  */
@@ -17,24 +17,13 @@ export const company = {
   blurb:
     "Manufacturing & trading of all packaging printing materials — rotogravure-printed laminated rolls, pouches, sachets and shrink sleeves.",
   proprietor: {
-    name: "Avinash Kumar",
+    name: "Ramakant Pandey",
     role: "Founder & Proprietor",
   },
-  partner: {
-    name: "Ramakant Pandey",
-    role: "Proprietor",
-    region: "Bihar & Jharkhand",
-    phones: [
-      { label: "Sales", number: "+918434635708", display: "+91 84346 35708" },
-      { label: "Works & Sales", number: "+919711853825", display: "+91 97118 53825" },
-    ],
-    show: true,
-  },
   phones: [
-    { label: "Sales", number: "+919507989049", display: "+91 95079 89049" },
     { label: "Works", number: "+919711853825", display: "+91 97118 53825" },
   ],
-  whatsapp: "919507989049",
+  whatsapp: "918434635708",
   email: "rrpackagingcompany@gmail.com", // ⚠️ CONFIRM full address
   address: {
     line1: "C-43-44, Phase-III, UPSIDC",
