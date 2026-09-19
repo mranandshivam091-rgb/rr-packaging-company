@@ -938,7 +938,7 @@ h3, h4, h5 {
   font-family: var(--f-serif);
   font-weight: 400;
   letter-spacing: -0.03em;
-  font-size: min(13vw, 11.5rem);
+  font-size: min(7vw, 6.25rem);
   line-height: 0.9;
   text-align: center;
   white-space: nowrap;

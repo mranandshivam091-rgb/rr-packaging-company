@@ -88,7 +88,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="footer-mark" aria-hidden="true">R R PACKAGING</div>
+        <div className="footer-mark" aria-hidden="true">R R PACKAGING COMPANY</div>
 
         <div className="footer-bottom">
           <span>© {year} {company.legalName}. All rights reserved.</span>

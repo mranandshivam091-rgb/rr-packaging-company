@@ -283,7 +283,7 @@ export const brandNames = [
 /** How a job moves through the plant. */
 export const process = [
   { n: "01", title: "Artwork & pre-press", body: "We take your design, colour-separate it, add registration and eye-marks, and send you a digital proof before a single cylinder is cut." },
-  { n: "02", title: "Rotogravure cylinder engraving", body: "Copper cylinders are engraved to the separation, chrome-plated for run length, and proofed against your approved colour targets." },
+  { n: "02", title: "Rotogravure printing", body: "Copper cylinders are engraved to the separation, chrome-plated for run length, and proofed against your approved colour targets." },
   { n: "03", title: "Rotogravure printing", body: "Up to eight colours in a single pass, with in-line registration control and continuous density checks against the approved proof." },
   { n: "04", title: "Solvent-less lamination & curing", body: "Layers are bonded on solvent-less lamination lines to the structure your product needs — moisture, oxygen, aroma or light barrier — then cured to full bond strength." },
   { n: "05", title: "Slitting & pouching", body: "Slit to your web width and core, or converted into finished pouches and sachets on our pouching lines." },
