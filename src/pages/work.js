@@ -29,7 +29,7 @@ export default function WorkPage() {
           <Stagger className="gal" gap={0.04}>
             {work.map(w => (
               <StaggerItem className="gal-item" key={w.image}>
-                <Img name={w.image} alt={`${w.brand} — ${w.format} printed by RR Packaging Company`} />
+                <Img name={w.image} alt={`${w.brand} — ${w.format} printed by RR Packaging Company`} objectFit={w.fit || "cover"} />
                 <div className="gal-cap">
                   <p className="fmt">{w.format}</p>
                   <h3>{w.brand}</h3>

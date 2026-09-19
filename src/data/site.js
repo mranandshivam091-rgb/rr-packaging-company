@@ -257,7 +257,7 @@ export const work = [
   { image: "rm-health-back", brand: "RM Ayurved Health Mix", format: "Stand-up zipper pouch", note: "Reverse panel — dosage and licence copy" },
   { image: "beverage-label", brand: "Bottled beverage", format: "Wrap-around bottle label", note: "1.25 L PET — high-speed label stock" },
   { image: "aowsome-turmeric", brand: "Aowsome Indian", format: "Printed laminated roll", note: "Muskan Food Industries — turmeric powder" },
-  { image: "bartan-bar-rolls", brand: "AVR & Surya Kiran Spices", format: "Printed laminated rolls", note: "Spices & masala — garam masala, kali mirch, dhaniya and haldi packaging rolls" },
+  { image: "bartan-bar-rolls", brand: "AVR & Surya Kiran Spices", format: "Printed laminated rolls", note: "Spices & masala — garam masala, kali mirch, dhaniya and haldi packaging rolls", fit: "contain" },
 ]
 
 /** Brand names for the marquee. */

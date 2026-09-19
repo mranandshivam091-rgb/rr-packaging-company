@@ -115,7 +115,7 @@ export default function IndexPage() {
 
           <Reveal delay={0.1} className="media-frame">
             <Parallax>
-              <Img name="cylinder" variant="wide" alt="An engraved copper rotogravure printing cylinder on the press" style={{ height: "100%" }} />
+              <Img name="cylinder" variant="wide" alt="An engraved copper rotogravure printing cylinder on the press" style={{ height: "100%" }} objectFit="contain" />
             </Parallax>
           </Reveal>
         </div>
@@ -264,7 +264,7 @@ export default function IndexPage() {
           <Stagger className="grid cols-3">
             {featuredWork.map(w => (
               <StaggerItem className="gal-item" key={w.image}>
-                <Img name={w.image} alt={`${w.brand} — ${w.format}`} />
+                <Img name={w.image} alt={`${w.brand} — ${w.format}`} objectFit={w.fit || "cover"} />
                 <div className="gal-cap">
                   <p className="fmt">{w.format}</p>
                   <h3>{w.brand}</h3>
