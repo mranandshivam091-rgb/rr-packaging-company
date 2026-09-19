@@ -73,7 +73,12 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <span>© {year} {company.legalName}. All rights reserved.</span>
-          <span>{company.proprietor.name} · {company.proprietor.role}</span>
+          <span>
+            {company.proprietor.name} · {company.proprietor.role}
+            {company.partner.show && (
+              <> &nbsp;·&nbsp; {company.partner.name} · {company.partner.role}, {company.partner.region}</>
+            )}
+          </span>
         </div>
       </div>
     </footer>

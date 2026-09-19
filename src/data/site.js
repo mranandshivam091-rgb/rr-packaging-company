@@ -20,11 +20,15 @@ export const company = {
     name: "Avinash Kumar",
     role: "Founder & Proprietor",
   },
-  // Second name printed on the older visiting card. // ⚠️ CONFIRM whether to list.
   partner: {
     name: "Ramakant Pandey",
     role: "Proprietor",
-    show: false,
+    region: "Bihar & Jharkhand",
+    phones: [
+      { label: "Sales", number: "+918434635708", display: "+91 84346 35708" },
+      { label: "Works & Sales", number: "+919711853825", display: "+91 97118 53825" },
+    ],
+    show: true,
   },
   phones: [
     { label: "Sales", number: "+919507989049", display: "+91 95079 89049" },
