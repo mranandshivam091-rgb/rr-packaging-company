@@ -336,11 +336,11 @@ h3, h4, h5 {
 
 .brand { display: flex; align-items: center; gap: 13px; flex: none; }
 .brand-chip {
-  width: 44px; height: 44px;
+  width: 52px; height: 52px;
   border-radius: 50%;
   background: #fff;
   display: grid; place-items: center;
-  padding: 5px;
+  padding: 3px;
   flex: none;
   box-shadow: 0 0 0 1px rgba(27, 42, 109, 0.1);
   transition: transform 0.45s var(--ease);
@@ -352,7 +352,7 @@ h3, h4, h5 {
 .brand-name {
   display: block;
   font-family: var(--f-sans);
-  font-size: 24px;
+  font-size: 27px;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.012em;
@@ -360,7 +360,7 @@ h3, h4, h5 {
 }
 .brand-sub {
   display: block;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   line-height: 1.1;
   letter-spacing: 2px;
