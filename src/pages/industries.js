@@ -67,7 +67,7 @@ export default function IndustriesPage() {
 export const Head = () => (
   <Seo
     title="Industries We Serve"
-    description="Flexible packaging for bakery and snacks, spices and masala, ayurveda and pharma, beverages, staples and agri, and personal and home care — from RR Packaging Company, Hapur."
+    description="Flexible packaging for bakery and snacks, spices and masala, ayurveda and pharma, beverages, staples and agri, and personal and home care — from R R Packaging Company, Hapur."
     pathname="/industries/"
   />
 )

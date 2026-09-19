@@ -38,7 +38,7 @@ export default function Header() {
               <img src={mark} alt="" width="36" height="36" />
             </span>
             <span className="brand-text">
-              <span className="brand-name">RR Packaging</span>
+              <span className="brand-name">R R Packaging</span>
               <span className="brand-sub">Hapur · U.P.</span>
             </span>
           </Link>

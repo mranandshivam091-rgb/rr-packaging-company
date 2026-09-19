@@ -1,12 +1,12 @@
 /**
- * RR Packaging Company — gatsby-config
+ * R R Packaging Company — gatsby-config
  */
 const siteUrl = process.env.SITE_URL || "https://rr-packaging-company.vercel.app"
 
 module.exports = {
   siteMetadata: {
-    title: "RR Packaging Company",
-    titleTemplate: "%s | RR Packaging Company",
+    title: "R R Packaging Company",
+    titleTemplate: "%s | R R Packaging Company",
     description:
       "Manufacturer and trader of all packaging printing materials. Rotogravure-printed laminated rolls, pouches, sachets and shrink sleeves for food, pharma and FMCG brands. Pan-India delivery from Hapur, Uttar Pradesh.",
     siteUrl,
@@ -25,8 +25,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "RR Packaging Company",
-        short_name: "RR Packaging",
+        name: "R R Packaging Company",
+        short_name: "R R Packaging",
         start_url: "/",
         background_color: "#FFFFFF",
         theme_color: "#4E9AE8",

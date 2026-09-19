@@ -29,7 +29,7 @@ export default function WorkPage() {
           <Stagger className="gal" gap={0.04}>
             {work.map(w => (
               <StaggerItem className="gal-item" key={w.image}>
-                <Img name={w.image} alt={`${w.brand} — ${w.format} printed by RR Packaging Company`} objectFit={w.fit || "cover"} />
+                <Img name={w.image} alt={`${w.brand} — ${w.format} printed by R R Packaging Company`} objectFit={w.fit || "cover"} />
                 <div className="gal-cap">
                   <p className="fmt">{w.format}</p>
                   <h3>{w.brand}</h3>
@@ -42,7 +42,7 @@ export default function WorkPage() {
           <Reveal delay={0.1}>
             <p className="t-small mt-l" style={{ maxWidth: "62ch" }}>
               Brand names and artwork shown belong to their respective owners and
-              appear here only to identify work carried out by RR Packaging Company.
+              appear here only to identify work carried out by R R Packaging Company.
             </p>
           </Reveal>
         </div>
@@ -60,7 +60,7 @@ export default function WorkPage() {
 export const Head = () => (
   <Seo
     title="Our Work"
-    description="Printed laminated rolls, pouches and sachets produced by RR Packaging Company for bakery, spice, ayurvedic, beverage and home care brands across India."
+    description="Printed laminated rolls, pouches and sachets produced by R R Packaging Company for bakery, spice, ayurvedic, beverage and home care brands across India."
     pathname="/work/"
   />
 )

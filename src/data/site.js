@@ -1,6 +1,6 @@
 /**
  * ─────────────────────────────────────────────────────────────
- *  RR PACKAGING COMPANY — SINGLE SOURCE OF TRUTH
+ *  R R PACKAGING COMPANY — SINGLE SOURCE OF TRUTH
  *  Everything the website says lives in this one file.
  *  Edit here, rebuild, and the whole site updates.
  *
@@ -10,8 +10,8 @@
  */
 
 export const company = {
-  name: "RR Packaging Company",
-  legalName: "RR Packaging Company",
+  name: "R R Packaging Company",
+  legalName: "R R Packaging Company",
   tagline: "We deal in all types of packaging solutions",
   motto: ["Quality", "Durability", "Innovation"],
   blurb:
@@ -59,7 +59,7 @@ export const nav = [
   { label: "Contact", to: "/contact/" },
 ]
 
-/** The eight formats RR produces. `image` = key in src/images/gen. */
+/** The eight formats R R Packaging Company produces. `image` = key in src/images/gen. */
 export const products = [
   {
     slug: "laminated-rolls",
@@ -181,7 +181,7 @@ export const products = [
     summary:
       "Beyond our own formats we trade the full range of packaging printing materials — so one purchase order covers everything.",
     detail:
-      "If you need a material or a format we do not run in-house, we source it. Adhesive tapes, courier bags, BOPP bags, laminates, printed labels — RR Packaging Company has been a manufacturing and trading house from day one.",
+      "If you need a material or a format we do not run in-house, we source it. Adhesive tapes, courier bags, BOPP bags, laminates, printed labels — R R Packaging Company has been a manufacturing and trading house from day one.",
     specs: [
       ["Trading", "All packaging printing materials"],
       ["Sourcing", "Vetted mills and converters"],
@@ -283,9 +283,9 @@ export const brandNames = [
 /** How a job moves through the plant. */
 export const process = [
   { n: "01", title: "Artwork & pre-press", body: "We take your design, colour-separate it, add registration and eye-marks, and send you a digital proof before a single cylinder is cut." },
-  { n: "02", title: "Cylinder engraving", body: "Copper cylinders are engraved to the separation, chrome-plated for run length, and proofed against your approved colour targets." },
+  { n: "02", title: "Rotogravure cylinder engraving", body: "Copper cylinders are engraved to the separation, chrome-plated for run length, and proofed against your approved colour targets." },
   { n: "03", title: "Rotogravure printing", body: "Up to eight colours in a single pass, with in-line registration control and continuous density checks against the approved proof." },
-  { n: "04", title: "Lamination & curing", body: "Layers are bonded to the structure your product needs — moisture, oxygen, aroma or light barrier — then cured to full bond strength." },
+  { n: "04", title: "Solvent-less lamination & curing", body: "Layers are bonded on solvent-less lamination lines to the structure your product needs — moisture, oxygen, aroma or light barrier — then cured to full bond strength." },
   { n: "05", title: "Slitting & pouching", body: "Slit to your web width and core, or converted into finished pouches and sachets on our pouching lines." },
   { n: "06", title: "QC & dispatch", body: "Every reel is checked for print, bond and seal before it is packed, labelled and dispatched anywhere in India." },
 ]

@@ -141,7 +141,7 @@ export default function ProductsPage() {
 export const Head = () => (
   <Seo
     title="Products & Formats"
-    description="Printed laminated rolls, centre-seal pouches, stand-up zipper pouches, three-side-seal sachets, flat-bottom pouches, spouted pouches and shrink sleeves — with the laminate structures and finishes RR Packaging Company supplies."
+    description="Printed laminated rolls, centre-seal pouches, stand-up zipper pouches, three-side-seal sachets, flat-bottom pouches, spouted pouches and shrink sleeves — with the laminate structures and finishes R R Packaging Company supplies."
     pathname="/products/"
   />
 )

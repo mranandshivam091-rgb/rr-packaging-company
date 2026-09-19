@@ -18,7 +18,7 @@ const blank = {
 /**
  * No server, no third-party form service. The enquiry is composed into a
  * WhatsApp message (or an email) that the visitor sends from their own
- * account — which is how RR's customers already talk to them.
+ * account — which is how R R Packaging Company's customers already talk to them.
  */
 function compose(f) {
   const lines = [
@@ -162,7 +162,7 @@ export default function ContactPage() {
               <div>
                 <p className="t-small" style={{ textTransform: "uppercase", letterSpacing: "0.12em" }}>Facebook</p>
                 <a href={company.social.facebook} target="_blank" rel="noopener noreferrer" style={{ fontSize: "1.15rem", fontFamily: "var(--f-display)" }}>
-                  RR Packaging Company
+                  R R Packaging Company
                 </a>
               </div>
             </div>
@@ -362,7 +362,7 @@ export default function ContactPage() {
 export const Head = () => (
   <Seo
     title="Contact"
-    description="Contact RR Packaging Company, C-43-44 Phase-III UPSIDC, MG Road Industrial Area, Hapur-245101, Uttar Pradesh. Call +91 95079 89049 or send an enquiry on WhatsApp for a flexible packaging quote."
+    description="Contact R R Packaging Company, C-43-44 Phase-III UPSIDC, MG Road Industrial Area, Hapur-245101, Uttar Pradesh. Call +91 97118 53825 or send an enquiry on WhatsApp for a flexible packaging quote."
     pathname="/contact/"
   />
 )

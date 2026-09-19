@@ -16,7 +16,7 @@ export default function Footer() {
                 <img src={mark} alt="" width="36" height="36" />
               </span>
               <span className="brand-text">
-                <span className="brand-name">RR Packaging</span>
+                <span className="brand-name">R R Packaging</span>
                 <span className="brand-sub">Company</span>
               </span>
             </Link>
@@ -72,7 +72,7 @@ export default function Footer() {
                 href={company.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="RR Packaging Company on Instagram"
+                aria-label="R R Packaging Company on Instagram"
               >
                 <Instagram size={20} />
               </a>
@@ -80,7 +80,7 @@ export default function Footer() {
                 href={company.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="RR Packaging Company on Facebook"
+                aria-label="R R Packaging Company on Facebook"
               >
                 <Facebook size={20} />
               </a>
@@ -88,7 +88,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="footer-mark" aria-hidden="true">RR PACKAGING</div>
+        <div className="footer-mark" aria-hidden="true">R R PACKAGING</div>
 
         <div className="footer-bottom">
           <span>© {year} {company.legalName}. All rights reserved.</span>

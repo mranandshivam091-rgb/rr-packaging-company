@@ -287,7 +287,7 @@ export default function IndexPage() {
         <div className="wrap">
           <div className="section-head -split">
             <div>
-              <Reveal><p className="eyebrow">Why RR</p></Reveal>
+              <Reveal><p className="eyebrow">Why R R Packaging Company</p></Reveal>
               <Reveal delay={0.06}>
                 <ScrollWords className="t-h2" text="Four reasons buyers stay with us." highlight={[1]} />
               </Reveal>
@@ -316,7 +316,7 @@ export default function IndexPage() {
 export const Head = () => (
   <Seo
     title="Flexible Packaging & Printing in Hapur"
-    description="RR Packaging Company — manufacturer and trader of all packaging printing materials. Rotogravure-printed laminated rolls, pouches, sachets and shrink sleeves for food, pharma and FMCG brands. Pan-India delivery from Hapur, U.P."
+    description="R R Packaging Company — manufacturer and trader of all packaging printing materials. Rotogravure-printed laminated rolls, pouches, sachets and shrink sleeves for food, pharma and FMCG brands. Pan-India delivery from Hapur, U.P."
     pathname="/"
   />
 )

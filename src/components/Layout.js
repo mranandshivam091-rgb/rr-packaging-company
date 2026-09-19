@@ -26,7 +26,7 @@ export default function Layout({ children }) {
         as="a"
         className="wa-fab"
         href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
-          "Hello RR Packaging Company, I would like to enquire about packaging."
+          "Hello R R Packaging Company, I would like to enquire about packaging."
         )}`}
         target="_blank"
         rel="noopener noreferrer"
