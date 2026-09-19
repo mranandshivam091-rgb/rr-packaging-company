@@ -5,7 +5,7 @@ import Seo from "../components/Seo"
 import Accordion from "../components/Accordion"
 import { Reveal, Words } from "../components/Reveal"
 import { ScrollWords } from "../components/Motion"
-import { Arrow, Check, Clock, Mail, Phone, Pin, Whatsapp } from "../components/Icons"
+import { Arrow, Check, Clock, Facebook, Instagram, Mail, Phone, Pin, Whatsapp } from "../components/Icons"
 import { company, addressOneLine, products, faqs } from "../data/site"
 
 const EASE = [0.22, 1, 0.36, 1]
@@ -144,6 +144,26 @@ export default function ContactPage() {
               <div>
                 <p className="t-small" style={{ textTransform: "uppercase", letterSpacing: "0.12em" }}>Email</p>
                 <a href={`mailto:${company.email}`} style={{ wordBreak: "break-all" }}>{company.email}</a>
+              </div>
+            </div>
+
+            <div className="contact-row">
+              <span className="contact-ic"><Instagram size={18} /></span>
+              <div>
+                <p className="t-small" style={{ textTransform: "uppercase", letterSpacing: "0.12em" }}>Instagram</p>
+                <a href={company.social.instagram} target="_blank" rel="noopener noreferrer" style={{ fontSize: "1.15rem", fontFamily: "var(--f-display)" }}>
+                  @rrpackagingcompany
+                </a>
+              </div>
+            </div>
+
+            <div className="contact-row">
+              <span className="contact-ic"><Facebook size={18} /></span>
+              <div>
+                <p className="t-small" style={{ textTransform: "uppercase", letterSpacing: "0.12em" }}>Facebook</p>
+                <a href={company.social.facebook} target="_blank" rel="noopener noreferrer" style={{ fontSize: "1.15rem", fontFamily: "var(--f-display)" }}>
+                  RR Packaging Company
+                </a>
               </div>
             </div>
 

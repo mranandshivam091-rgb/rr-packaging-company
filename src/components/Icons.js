@@ -41,6 +41,20 @@ export const Whatsapp = ({ size = 24 }) => (
   </svg>
 )
 
+export const Instagram = ({ size = 18 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" {...base} aria-hidden="true">
+    <rect x="3" y="3" width="18" height="18" rx="5" />
+    <circle cx="12" cy="12" r="4" />
+    <circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none" />
+  </svg>
+)
+
+export const Facebook = ({ size = 18 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M13.5 21v-7.2h2.4l.36-2.8h-2.76V9.1c0-.81.22-1.36 1.39-1.36h1.48V5.2A19.8 19.8 0 0 0 14.5 5c-2.15 0-3.62 1.31-3.62 3.72v2.28H8.46v2.8h2.42V21h2.62Z" />
+  </svg>
+)
+
 export const Check = ({ size = 16 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" {...base} aria-hidden="true">
     <path d="m20 6-11 11-5-5" />

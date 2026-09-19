@@ -44,6 +44,7 @@ export default function Seo({ title, description, pathname = "/", noindex, child
       addressRegion: company.address.state,
       addressCountry: "IN",
     },
+    sameAs: [company.social.instagram, company.social.facebook],
     areaServed: "IN",
     knowsAbout: [
       "Flexible packaging",

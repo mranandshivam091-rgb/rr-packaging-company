@@ -24,6 +24,10 @@ export const company = {
     { label: "Works", number: "+919711853825", display: "+91 97118 53825" },
   ],
   whatsapp: "918434635708",
+  social: {
+    instagram: "https://www.instagram.com/rrpackagingcompany",
+    facebook: "https://www.facebook.com/share/1Hbe7KUfBZ/",
+  },
   email: "rrpackagingcompany@gmail.com", // ⚠️ CONFIRM full address
   address: {
     line1: "C-43-44, Phase-III, UPSIDC",

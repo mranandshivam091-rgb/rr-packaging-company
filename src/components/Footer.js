@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { company, nav, products, addressOneLine } from "../data/site"
 import mark from "../images/mark.png"
+import { Instagram, Facebook } from "./Icons"
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -66,6 +67,24 @@ export default function Footer() {
             </div>
             <p className="t-small" style={{ marginTop: 18 }}>{addressOneLine}</p>
             <p className="t-small" style={{ marginTop: 10 }}>{company.hours}</p>
+            <div style={{ display: "flex", gap: 14, marginTop: 18 }}>
+              <a
+                href={company.social.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="RR Packaging Company on Instagram"
+              >
+                <Instagram size={20} />
+              </a>
+              <a
+                href={company.social.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="RR Packaging Company on Facebook"
+              >
+                <Facebook size={20} />
+              </a>
+            </div>
           </div>
         </div>
 
