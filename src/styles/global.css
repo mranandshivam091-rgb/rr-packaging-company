@@ -352,14 +352,14 @@ h3, h4, h5 {
 .brand-name {
   display: block;
   font-family: var(--f-sans);
-  font-size: 0.94rem;
+  font-size: 1.15rem;
   font-weight: 700;
   letter-spacing: -0.012em;
   color: var(--txt);
 }
 .brand-sub {
   display: block;
-  font-size: 0.63rem;
+  font-size: 1.15rem;
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
